@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/phaser@3.60.0/dist/phaser.min.js"></script>
+    <style>body { margin: 0; padding: 0; display: flex; justify-content: center; align-items: center; height: 100vh; background: #000; }</style>
+</head>
+<body>
+    <script>
+        const config = {
+            type: Phaser.WEBGL,
+            width: 800,
+            height: 600,
+            backgroundColor: '#000000',
+            physics: { default: 'arcade', arcade: { gravity: { y: 0 } } },
+            scene: { preload: preload, create: create }
+        };
+
+        const game = new Phaser.Game(config);
+
+        function preload() {
+            this.load.atlas('dungeon', 'dungeon_tileset.png', 'dungeon_tileset.json');
+            this.load.json('gridData', 'dungeon_tileset.json'); // We will use your grid template here
+        }
+
+        function create() {
+            // This is the grid data Claude provided
+            const gridData = {
+                "tileSize": 128,
+                "grid": [
+                    [1, 1, 1, 1, 1],
+                    [1, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 1],
+                    [1, 0, 0, 0, 1],
+                    [1, 1, 1, 1, 1]
+                ]
+            };
+
+            const tileSize = gridData.tileSize;
+
+            gridData.grid.forEach((row, rowIndex) => {
+                row.forEach((cell, colIndex) => {
+                    // Place floor everywhere first
+                    this.add.image(colIndex * tileSize, rowIndex * tileSize, 'dungeon', 'stone_tile_cracked_large').setOrigin(0, 0);
+                    
+                    // If cell is 1, place a wall
+                    if (cell === 1) {
+                        this.add.image(colIndex * tileSize, rowIndex * tileSize, 'dungeon', 'wall_stone_corner_tl').setOrigin(0, 0);
+                    }
+                });
+            });
+        }
+    </script>
+</body>
+</html>
