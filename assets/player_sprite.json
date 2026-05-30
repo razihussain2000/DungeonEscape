@@ -1,0 +1,113 @@
+{
+  "frames": [
+
+    {
+      "filename": "idle",
+      "frame":   { "x":   0, "y":    0, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "walk_1",
+      "frame":   { "x": 256, "y":    0, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "walk_2",
+      "frame":   { "x": 512, "y":    0, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "walk_3",
+      "frame":   { "x": 768, "y":    0, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+
+    {
+      "filename": "yell",
+      "frame":   { "x":   0, "y":  512, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "attack",
+      "frame":   { "x": 256, "y":  512, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "fall",
+      "frame":   { "x": 512, "y":  512, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "run",
+      "frame":   { "x": 768, "y":  512, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+
+    {
+      "filename": "crouch",
+      "frame":   { "x":   0, "y": 1024, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "crouch_walk",
+      "frame":   { "x": 256, "y": 1024, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "throw_1",
+      "frame":   { "x": 512, "y": 1024, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    },
+    {
+      "filename": "throw_2",
+      "frame":   { "x": 768, "y": 1024, "w": 256, "h": 512 },
+      "rotated": false,
+      "trimmed": false,
+      "spriteSourceSize": { "x": 0, "y": 0, "w": 256, "h": 512 },
+      "sourceSize":       { "w": 256, "h": 512 }
+    }
+
+  ],
+  "meta": {
+    "app":     "Phaser 3 Texture Atlas",
+    "version": "1.0",
+    "image":   "player_set.png",
+    "format":  "RGB888",
+    "size":    { "w": 1024, "h": 1536 },
+    "scale":   1,
+    "grid":    { "cols": 4, "rows": 3, "cellW": 256, "cellH": 512 }
+  }
+}
